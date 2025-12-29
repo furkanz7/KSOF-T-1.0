@@ -1,56 +1,82 @@
-# 🏋️ KSOFit - AI Powered Fitness Coach
+# 🏋️ KSOFit - Killer Skinny Obese Fit
 
-**KSOFit** (Killer Skinny Obese Fit) is a next-generation mobile fitness application designed specifically for **"Skinny Fat"** and **"Obese"** beginners.
+<div align="center">
 
-Unlike generic fitness apps, KSOFit uses **Google Gemini AI** to analyze your physical stats (age, weight, height) and goals to generate a 100% personalized, weekly workout plan with dynamic visual guides.
+[![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactnative.dev/)
+[![Expo](https://img.shields.io/badge/Expo-1B1F23?style=for-the-badge&logo=expo&logoColor=white)](https://expo.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Gemini 3.5](https://img.shields.io/badge/AI-Gemini_3.5_Flash-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://deepmind.google/technologies/gemini/)
 
----
+**"Sıradan bir fitness uygulaması değil; cebinizdeki biyomekanik yapay zeka antrenörü."**
 
-## 📱 Screenshots
-
-| Login Screen | Onboarding | Workout Plan |
-|:---:|:---:|:---:|
-| <img src="./assets/screenshot-login.png" width="200" /> | <img src="./assets/screenshot-onboarding.png" width="200" /> | <img src="./assets/screenshot-plan.png" width="200" /> |
-
-*(Note: Replace the image paths above with your actual screenshots)*
+</div>
 
 ---
 
-## ✨ Key Features
+## 📖 Proje Hakkında
 
-* **🧬 AI-Driven Customization:** Uses Google's **Gemini Pro** model to create tailored workout routines based on user prompts.
-* **🎯 Targeted Flows:** Specific onboarding paths for users wanting to "Lose Weight", "Bulk", or "Recomp" (Burn fat & build muscle).
-* **🎨 Premium Aesthetic:** Modern "Dark Gym" theme with glassmorphism effects, linear gradients, and a cohesive design system.
-* **🖼️ Dynamic Visuals:** Automatically fetches exercise images based on the generated plan keywords.
-* **🔐 Authentication UI:** Complete simulation of Login/Register flows with validation logic.
+**KSOFit**, özellikle fitness dünyasına yeni adım atan **"Skinny Fat"** (Zayıf-Yağlı) ve **"Obez"** bireyler için tasarlanmış yeni nesil bir mobil koçluk platformudur.
+
+Piyasadaki statik (herkese aynı şeyi veren) programların aksine, KSOFit **Google Gemini 3.5** dil modelini kullanarak kullanıcının anatomik verilerini, hedeflerini ve mevcut ekipmanlarını analiz eder. Sonuç olarak, milimetrik hesaplanmış beslenme planları ve hiper-kişiselleştirilmiş antrenman rutinleri oluşturur.
 
 ---
 
-## 🛠 Tech Stack & Architecture
+## 🧠 Yapay Zeka Motoru: Gemini 3.5
 
-This project is built with a scalable **Component-Based Architecture** using **TypeScript**.
+Bu projenin kalbinde, Google'ın en güncel ve en hızlı modellerinden biri olan **Gemini 3.5** yatmaktadır. Uygulama, basit metin istemleri yerine **"Structured Outputs" (Yapılandırılmış JSON Şemaları)** kullanır.
 
-| Technology | Purpose |
+| Özellik | Açıklama |
 | :--- | :--- |
-| **Expo (React Native)** | Cross-platform mobile development framework. |
-| **TypeScript (.tsx)** | Static type checking for robust and error-free code. |
-| **Google Gemini API** | Large Language Model (LLM) for workout generation logic. |
-| **React Navigation** | Handling stack navigation and screen transitions. |
-| **Component Architecture** | Reusable UI elements (`Button`, `Input`, `Layout`) for DRY code. |
-| **Expo Linear Gradient** | For creating the immersive dark-themed backgrounds. |
+| **🧬 Biyometrik Analiz** | Kullanıcının boy, kilo, yaş ve cinsiyet verilerini işleyerek TDEE ve BMR (Bazal Metabolizma Hızı) hesaplar. |
+| **🥗 Dinamik Beslenme** | *"Dolabımda sadece yumurta ve pirinç var"* dediğinizde, bu malzemelerle makro hedeflerinize uygun tarif üretir. |
+| **🏋️ Akıllı Programlama** | *"Haftada 3 günüm var ve dizim ağrıyor"* gibi karmaşık kısıtlamaları anlayıp programı buna göre revize eder. |
+| **🗺️ Lokasyon Zekası** | Google Maps entegrasyonu ile (Grounding) çevrenizdeki en yüksek puanlı spor salonlarını analiz eder ve listeler. |
 
 ---
 
-## 📂 Project Structure
+## ✨ Temel Özellikler
+
+### 1. 🔐 Güvenli Kimlik Doğrulama
+* Modern form validasyonları.
+* Şifre güvenliği ve kullanıcı oturum yönetimi.
+* Kullanıcı dostu hata yönetimi ve geri bildirimler.
+
+### 2. 🎯 Hedef Odaklı Onboarding
+Kullanıcıyı boğmadan, 5 adımda analiz eden sihirbaz:
+* **Vücut Tipi Analizi:** Skinny Fat, Obez, Atletik.
+* **Hedef Belirleme:** Yağ Yakımı (Cut), Kas İnşası (Bulk), Vücut Düzenleme (Recomp).
+* **Ekipman Durumu:** Evde, Spor Salonunda veya Vücut Ağırlığıyla.
+
+### 3. 🔥 "Chef Mode" (Şef Modu)
+Yapay zeka, elinizdeki malzemelere göre anlık yemek tarifi üretir.
+> *"Bana 200g tavuk ve mantarla, 500 kaloriyi geçmeyecek, yüksek proteinli bir akşam yemeği hazırla."*
+
+### 4. 🎨 Premium "Dark Gym" Arayüzü
+* Göz yormayan koyu mod (Dark Mode).
+* **Glassmorphism:** Şeffaf katmanlar ve modern bulanıklık efektleri.
+* **Linear Gradients:** Derinlik katan renk geçişleri.
+* Akıcı animasyonlar ve sayfa geçişleri.
+
+---
+
+## 🛠 Teknik Mimari & Teknoloji Yığını
+
+Proje, sürdürülebilirlik ve performans için **Clean Architecture** prensiplerine uygun olarak geliştirilmiştir.
+
+### 🏗️ Çekirdek Teknolojiler
+* **Framework:** React Native (Expo SDK 50+)
+* **Dil:** TypeScript (Tam Tip Güvenliği İçin)
+* **Navigasyon:** React Navigation (Native Stack)
+* **AI SDK:** `@google/genai` (Modern SDK)
+* **Styling:** StyleSheet & Flexbox Layout
+
+### 📂 Dosya Yapısı
+Modüler ve ölçeklenebilir bir yapı tercih edilmiştir:
 
 ```bash
-KSOFit/
-├── assets/                  # Images and static files
-├── src/
-│   ├── components/          # Reusable UI (Button.tsx, Input.tsx, Layout.tsx)
-│   ├── screens/             # App screens (Login, Onboarding, WorkoutPlan)
-│   ├── services/            # API Integrations (geminiService.ts)
-│   ├── types/               # TypeScript interfaces and types
-│   └── utils/               # Helper functions
-├── App.tsx                  # Main entry point & Navigation setup
-└── package.json
+src/
+├── components/      # Yeniden kullanılabilir UI parçaları (Button, Input, Card)
+├── screens/         # Uygulama sayfaları (Login, WorkoutPlan, ChefMode)
+├── services/        # Dış dünya ile konuşan servisler (Gemini API, Google Maps)
+├── types/           # TypeScript arayüzleri ve veri modelleri
+└── utils/           # Yardımcı fonksiyonlar ve sabitler
