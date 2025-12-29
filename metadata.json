@@ -1,0 +1,7 @@
+{
+  "name": "KSOFit",
+  "description": "KSOFit (Killer Skinny Obese Fit) is a personalized AI fitness coach designed for beginners. It generates tailored workout plans based on user biometrics and goals using Google Gemini.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
