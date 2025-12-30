@@ -21,9 +21,9 @@ Piyasadaki statik (herkese aynı şeyi veren) programların aksine, KSOFit **Goo
 
 ---
 
-## 🧠 Yapay Zeka Motoru: Gemini 3.5
+## 🧠 Yapay Zeka Motoru: Gemini 3.0
 
-Bu projenin kalbinde, Google'ın en güncel ve en hızlı modellerinden biri olan **Gemini 3.5** yatmaktadır. Uygulama, basit metin istemleri yerine **"Structured Outputs" (Yapılandırılmış JSON Şemaları)** kullanır.
+Bu projenin kalbinde, Google'ın en güncel ve en hızlı modellerinden biri olan **Gemini 3.0** yatmaktadır. Uygulama, basit metin istemleri yerine **"Structured Outputs" (Yapılandırılmış JSON Şemaları)** kullanır.
 
 | Özellik | Açıklama |
 | :--- | :--- |
